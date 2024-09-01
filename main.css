@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    padding: 15px 0;
+    background: rgb(30, 30, 30);
+}
+.container{
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.list {
+    margin-left: 36px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    width: 100px;
+    list-style: none;
+    position: relative; /* Relative position to control child elements */
+}
+
+.dropdown {
+    border-radius: 10px;
+    gap: 16px;
+    padding: 9px 0;
+    box-shadow: 0px 0px 11px 0px rgb(255, 255, 255);
+    background: rgb(35, 32, 40);
+    width: 100%;
+    text-align: center;
+    display: flex; /* Always use flex, and control visibility */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    opacity: 0; /* Invisible initially */
+    visibility: hidden; /* Hidden initially */
+    transition: opacity 0.5s ease-in-out; /* Only transition opacity */
+    position: absolute; /* Position it absolutely under the parent */
+    top: 30px; /* Adjust as needed */
+    left: 0;
+}
+
+.dropdown__link {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.link::after {
+    background-image: url("./images/image-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    display: block;
+    width: 20px;
+    background-size: cover;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out; /* Transition for rotation */
+}
+
+.list:hover .dropdown {
+    opacity: 1; /* Show the dropdown */
+    visibility: visible; /* Make it visible */
+}
+.dropdown__item{
+    width: 78px;
+    padding: 5px 0;
+    border-radius: 10px;
+transition: 0.5s ease-in-out;
+    background: rgb(3, 3, 3);
+}
+.link:hover::after {
+    transform: rotate(0); /* Rotate back to original */
+}
+.dropdown__link{
+    color: rgb(255, 255, 255);
+font-family: "Poppins";
+font-size: 10px;
+font-weight: 600;
+line-height: 24px;
+transition: 0.5s ease-in-out;
+}
+.dropdown__item:hover{
+    background-color: #BFAFF2;
+}
+.dropdown__item:hover .dropdown__link{
+    color: black;
+}
+.header__btn{
+    border-radius: 15px;
+
+background: rgb(191, 175, 242);
+width: 175px;
+height: 50px;
+}
+.header__register{
+    color: rgb(255, 255, 255);
+font-family: "Poppins";
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+background-color    : rgb(30, 30, 30);
+}
+.div__title{
+    border-radius: 32px;
+
+    background: rgb(35, 32, 40);
+}
+.div__big{
+  
+    width: 345px;
+    height: 240px;
+}
+body{
+    background-color: black;
+}
+.div__biger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 97px;
+    margin-top: 170px;
+}
+.li__title{
+    color: white;
+}
+
+.div__{
+    display: flex;
+}
+.div__div{
+    display: flex;
+    gap: 40px;
+}
+.text{
+    color: white;
+    text-align: center;
+    color: rgb(255, 255, 255);
+font-family: Outfit;
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+margin-top: 44px;
+}
+.h1{
+    color: white;
+    text-align: center;
+    color: rgb(255, 255, 255);
+font-family: Outfit;
+font-size: 32px;
+font-weight: 400;
+line-height: 120%;
+margin-bottom: -2px;
+}
+.div__title{
+    width: 345px;
+    height: 240px;
+}
+.footer{
+    margin-top: 400px;
+}
+.item1{
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  gap: 40px;
+}
+.list1{
+    display: flex;
+gap: 40px;
+}
+.div__footer{
+    display: flex;
+  gap: 40px;
+}
+.footer__left{
+    gap: 50px;
+}
+.footer__right{
+    gap: 40px;
+}
+.div__center{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 900px;
+}
